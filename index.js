@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const messageRouter = require('./routes/messageRoute.js');
-const whatsappClient = require('./services/whatsappClient.js');
+const whatsappClient = require('./controllers/whatsappClient.js');
 
 whatsappClient.initialize();
 app.use(express.json());
